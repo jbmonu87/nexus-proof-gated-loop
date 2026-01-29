@@ -46,3 +46,13 @@ graph TD
   C -->|Fail| B
   C -->|Pass| D[Package<br>PR / Evidence Bundle]
   D --> E[Compound<br>Update Protocols / Brain]
+
+### Tech stack (context, not a dependency promise)
+The internal project uses tools like: Electron, Playwright (E2E), and native rendering engines (e.g., Konva/Tiptap patterns). This repo focuses on the operating system for building, not the full implementation.
+
+Contact
+JB Monu
+
+LinkedIn: https://www.linkedin.com/in/jb-monu-9a58543
+
+GitHub: https://github.com/jbmonu87
