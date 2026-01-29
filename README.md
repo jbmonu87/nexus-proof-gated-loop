@@ -27,5 +27,5 @@ The internal project uses tools like: Electron, Playwright (E2E), and native ren
 
 ## Contact
 - JB Monu
-- LinkedIn: <add>
-- GitHub: <add>
+- LinkedIn: <www.linkedin.com/in/jb-monu-9a58543>
+- GitHub: <https://github.com/jbmonu87>
