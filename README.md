@@ -17,10 +17,10 @@ This repository is **not** the Nexus IOE codebase. It’s a **public portfolio o
 - Not a startup pitch deck
 
 ## Start here (5–10 minutes)
-1) `docs/INTERVIEW_TOUR.md` — guided tour
-2) `docs/BUILD_LOOP.md` — the loop and roles
-3) `docs/VERIFICATION_STYLEGUIDE.md` — how verification stays deterministic
-4) `docs/SANITIZED_EXCERPTS.md` — safe excerpts from internal contracts/invariants
+1) [Interview Tour](docs/INTERVIEW_TOUR.md) — guided tour
+2) [Build Loop](docs/BUILD_LOOP.md) — the loop and roles
+3) [Verification Style Guide](docs/VERIFICATION_STYLEGUIDE.md) — how verification stays deterministic
+4) [Sanitized Excerpts](docs/SANITIZED_EXCERPTS.md) — concrete examples of contracts and proofs
 
 ## Tech stack (context, not a dependency promise)
 The internal project uses tools like: Electron, Playwright (E2E), and native rendering engines (e.g., Konva/Tiptap patterns). This repo focuses on **the operating system** for building, not the full implementation.
