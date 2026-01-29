@@ -37,6 +37,7 @@ This repository is **not** the Nexus IOE codebase. It’s a **public portfolio o
 
 ## Core documentation (fast links)
 
+* **Docs Index:** [`/docs/README.md`](docs/README.md) — reading order + map of protocols/specs/architecture
 * **Start Ritual & Roles:** [Start Ritual & Roles](https://www.google.com/search?q=docs/protocols/START_RITUAL_AND_ROLES.md)
 * **Doc Authority:** [Doc Authority & Execution Flow](https://www.google.com/search?q=docs/protocols/DOC_AUTHORITY_AND_EXECUTION_FLOW.md)
 * **Architecture:** [Nexus Graph](https://www.google.com/search?q=docs/architecture/NEXUS_GRAPH.md) — how the system treats “project > file” and data lineage
