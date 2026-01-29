@@ -22,6 +22,22 @@ This repository is **not** the Nexus IOE codebase. It’s a **public portfolio o
 3) [Verification Style Guide](docs/VERIFICATION_STYLEGUIDE.md) — how verification stays deterministic
 4) [Sanitized Excerpts](docs/SANITIZED_EXCERPTS.md) — concrete examples of contracts and proofs
 
+## Core documentation (fast links)
+- **Start Ritual & Roles:** [Start Ritual & Roles](docs/protocols/START_RITUAL_AND_ROLES.md)
+- **Doc Authority:** [Doc Authority & Execution Flow](docs/protocols/DOC_AUTHORITY_AND_EXECUTION_FLOW.md)
+- **Architecture:** [Nexus Graph](docs/architecture/NEXUS_GRAPH.md) — how the system treats “project > file” and data lineage
+- **Interface contract:** [Interface Spec](docs/specs/INTERFACE_SPEC.md) — UI/UX requirements written as buildable constraints
+- **Quality bar:** [UX Invariants](docs/specs/UX_INVARIANTS.md) — non-negotiable behavior rules that prevent regressions
+- **Fidelity strategy:** [Fidelity Strategy](docs/specs/FIDELITY_STRATEGY.md) — what “correct enough” means and how it’s tested
+- **AI delivery loop:** [Agent Loop Protocol](docs/protocols/AGENT_LOOP_PROTOCOL.md) — Plan → Build → Verify → Compound
+
+```mermaid
+flowchart TD
+  A[Plan: Define outcome + acceptance criteria] --> B[Build: Implement scoped change]
+  B --> C{Verify: proof passes?}
+  C -- No --> B
+  C -- Yes --> D[Compound: promote next smallest outcome]
+
 ## Tech stack (context, not a dependency promise)
 The internal project uses tools like: Electron, Playwright (E2E), and native rendering engines (e.g., Konva/Tiptap patterns). This repo focuses on **the operating system** for building, not the full implementation.
 
