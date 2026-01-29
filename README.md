@@ -33,11 +33,11 @@ This repository is **not** the Nexus IOE codebase. It’s a **public portfolio o
 
 ```mermaid
 graph TD
-  A[Plan (Intent + Acceptance Criteria)] --> B[Build (Implement + Spec)]
-  B --> C{Verify (Single Proof)}
+  A[Plan<br>Intent + Acceptance Criteria] --> B[Build<br>Implement + Spec]
+  B --> C{Verify<br>Single Proof}
   C -->|Fail| B
-  C -->|Pass| D[Package (PR / Evidence Bundle)]
-  D --> E[Compound (Update Protocols / Brain)]
+  C -->|Pass| D[Package<br>PR / Evidence Bundle]
+  D --> E[Compound<br>Update Protocols / Brain]
 ```
 
 ## Tech stack (context, not a dependency promise)
