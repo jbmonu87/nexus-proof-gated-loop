@@ -31,12 +31,15 @@ This repository is **not** the Nexus IOE codebase. It’s a **public portfolio o
 - **Fidelity strategy:** [Fidelity Strategy](docs/specs/FIDELITY_STRATEGY.md) — what “correct enough” means and how it’s tested
 - **AI delivery loop:** [Agent Loop Protocol](docs/protocols/AGENT_LOOP_PROTOCOL.md) — Plan → Build → Verify → Compound
 
+
 ```mermaid
-flowchart TD
-  A[Plan: Define outcome + acceptance criteria] --> B[Build: Implement scoped change]
-  B --> C{Verify: proof passes?}
-  C -- No --> B
-  C -- Yes --> D[Compound: promote next smallest outcome]
+graph TD
+  A[Workspace] --> B[Routine]
+  B --> C[Run]
+  A --> D[Artifact]
+  D --> E[View]
+  E --> F[Rendered In (Deck/Doc)]
+```
 
 ## Tech stack (context, not a dependency promise)
 The internal project uses tools like: Electron, Playwright (E2E), and native rendering engines (e.g., Konva/Tiptap patterns). This repo focuses on **the operating system** for building, not the full implementation.
