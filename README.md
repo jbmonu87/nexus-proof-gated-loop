@@ -31,14 +31,12 @@ This repository is **not** the Nexus IOE codebase. It’s a **public portfolio o
 - **Fidelity strategy:** [Fidelity Strategy](docs/specs/FIDELITY_STRATEGY.md) — what “correct enough” means and how it’s tested
 - **AI delivery loop:** [Agent Loop Protocol](docs/protocols/AGENT_LOOP_PROTOCOL.md) — Plan → Build → Verify → Compound
 
-
 ```mermaid
 graph TD
-  A[Workspace] --> B[Routine]
-  B --> C[Run]
-  A --> D[Artifact]
-  D --> E[View]
-  E --> F[Rendered In (Deck/Doc)]
+    A[Agent Plan] -->|Draft| B(Build Phase)
+    B --> C{Verification Gate}
+    C -->|Fail| B
+    C -->|Pass| D[Commit to Repo]
 ```
 
 ## Tech stack (context, not a dependency promise)
