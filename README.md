@@ -1,69 +1,76 @@
-# Nexus Proof-Gated Loop (Curated Public Artifacts)
+# Nexus: Building Reliably With AI Agents
 
-> **👋 Note to Reviewers (Hiring Managers):**
-> This repository is a **Product Architecture & Systems Portfolio**. It contains the actual **Product Requirements Documents (PRDs)**, **Data Schemas**, and **AI Operating Protocols** I designed to orchestrate an AI-native development workflow.
-> * **Role Demonstrated:** Technical Product Management & Systems Architecture.
-> * **Key Artifact:** Check `docs/protocols/AGENT_LOOP_PROTOCOL.md` to see how I programmatically manage AI agent behavior.
-> 
-> 
+> A public case study from a private, unshipped Office-style prototype.
 
----
+## The 20-second version
 
-This repository is **not** the Nexus IOE codebase. It’s a **public portfolio of my build system**: how I orchestrate AI agents and engineering work into a loop that compounds progress instead of compounding chaos.
+I created Nexus to learn how to direct AI agents on work where errors are easy to generate and hard to hide. An Office-style product is a useful stress test: a file can open successfully while its layout, behavior, or saved state is still wrong.
 
-**Focus:** Plan → Build → Verify → Compound
+I am the creator and product owner. I set product direction, turn ambiguous goals into bounded work, define acceptance criteria, assign separate research, build, and verification roles, review the evidence, and perform final human smoke tests. AI coding agents perform most of the implementation work.
 
-**Goal:** Make correctness legible and enforceable, even when development is fast.
+Nexus is private R&D, not a shipped product or a public source-code project. This is a case study in product ownership and AI-enabled execution, not a software-engineering portfolio.
 
-## What this shows (quick)
+## Why I built it
 
-* How I structure an AI-assisted workflow with clear roles (Planner / Builder / Verifier)
-* How I define “what must be true” contracts before implementation
-* How I gate progress on proofs (tests/oracles/contracts), not confidence
-* How I keep refactors from turning into a junk drawer fire
+I wanted practical answers to questions that matter well beyond software development:
 
-## What this is not
+- How do you give an AI agent enough context without giving it an unbounded assignment?
+- How do you know a confident answer or passing test reflects the real outcome?
+- When should one agent build while another independently verifies?
+- What evidence should a human require before accepting the work?
+- How do lessons become a better operating process instead of disappearing into chat history?
 
-* Not a runnable Nexus release
-* Not a source dump
-* Not a startup pitch deck
+Nexus gives me a demanding environment in which to test those questions rather than answer them only in theory.
 
-## Start here (5–10 minutes)
-
-1. [Interview Tour](https://www.google.com/search?q=docs/INTERVIEW_TOUR.md) — guided tour
-2. [Build Loop](https://www.google.com/search?q=docs/BUILD_LOOP.md) — the loop and roles
-3. [Verification Style Guide](https://www.google.com/search?q=docs/VERIFICATION_STYLEGUIDE.md) — how verification stays deterministic
-4. [Sanitized Excerpts](https://www.google.com/search?q=docs/SANITIZED_EXCERPTS.md) — concrete examples of contracts and proofs
-
-## Core documentation (fast links)
-
-* **Docs Index:** [`/docs/README.md`](docs/README.md) — reading order + map of protocols/specs/architecture
-* **Start Ritual & Roles:** [Start Ritual & Roles](https://www.google.com/search?q=docs/protocols/START_RITUAL_AND_ROLES.md)
-* **Doc Authority:** [Doc Authority & Execution Flow](https://www.google.com/search?q=docs/protocols/DOC_AUTHORITY_AND_EXECUTION_FLOW.md)
-* **Architecture:** [Nexus Graph](https://www.google.com/search?q=docs/architecture/NEXUS_GRAPH.md) — how the system treats “project > file” and data lineage
-* **Interface contract:** [Interface Spec](https://www.google.com/search?q=docs/specs/INTERFACE_SPEC.md) — UI/UX requirements written as buildable constraints
-* **Quality bar:** [UX Invariants](https://www.google.com/search?q=docs/specs/UX_INVARIANTS.md) — non-negotiable behavior rules that prevent regressions
-* **Fidelity strategy:** [Fidelity Strategy](https://www.google.com/search?q=docs/specs/FIDELITY_STRATEGY.md) — what “correct enough” means and how it’s tested
-* **AI delivery loop:** [Agent Loop Protocol](https://www.google.com/search?q=docs/protocols/AGENT_LOOP_PROTOCOL.md) — Plan → Build → Verify → Compound
-
-### System Logic Flow
+## The operating model
 
 ```mermaid
-graph TD
-  A[Plan<br>Intent + Acceptance Criteria] --> B[Build<br>Implement + Spec]
-  B --> C{Verify<br>Single Proof}
-  C -->|Fail| B
-  C -->|Pass| D[Package<br>PR / Evidence Bundle]
-  D --> E[Compound<br>Update Protocols / Brain]
-
+flowchart LR
+    A[Human intent] --> B[Scope and acceptance criteria]
+    B --> C[Research and test design]
+    B --> D[Build]
+    C --> E[Independent verification]
+    D --> E
+    E -->|Evidence fails| B
+    E -->|Evidence passes| F[Human review]
+    F --> G[Capture the lesson]
 ```
 
-## Tech stack (context, not a dependency promise)
+The important idea is simple: **AI output is not proof.** The person accountable for the outcome decides what must be true, what evidence is sufficient, and whether the result is ready to use.
 
-The internal project uses tools like: Electron, Playwright (E2E), and native rendering engines (e.g., Konva/Tiptap patterns). This repo focuses on **the operating system** for building, not the full implementation.
+## What exists today
+
+The private prototype currently demonstrates import, editing, and saved project state across presentation, document, and spreadsheet workflows. It also provides a real environment for testing role-separated agent work, evidence requirements, and human review.
+
+The prototype is far from complete. Office-format export is incomplete, editing coverage is uneven, visual and behavioral fidelity still have known gaps, and Nexus has no production customers or public release.
+
+[Read the dated status and claim boundaries](docs/CURRENT_STATUS.md).
+
+## What this work demonstrates
+
+- **Builder's judgment:** choosing a hard problem, making tradeoffs, and turning an idea into something testable
+- **AI workflow fluency:** directing agents with explicit context, roles, constraints, and stop conditions
+- **Product ownership:** defining the user outcome and deciding what is in or out of scope
+- **Operational discipline:** separating implementation from verification and requiring evidence before promotion
+- **Learning transfer:** converting failures into reusable practices for other business workflows
+
+It does **not** demonstrate that I personally wrote every line of code, that the system is production-ready, or that AI removes the need for technical experts and human accountability.
+
+## Explore the case study
+
+1. [Case Study](docs/CASE_STUDY.md) — the problem, my role, a representative failure, and the lessons I would carry into a business
+2. [Working With AI Agents](docs/WORKFLOW.md) — the operating loop, role boundaries, and a sample work packet
+3. [Current Status](docs/CURRENT_STATUS.md) — what exists, what remains incomplete, and what I am not claiming
+
+## Resume-safe description
+
+> Created Nexus, a private Office-style prototype, to learn how to direct AI agents on complex work where visible behavior and file fidelity make errors difficult to hide. Own product direction, task decomposition, acceptance criteria, agent routing, evidence review, and final human testing; AI coding agents perform most implementation work.
+
+## About this repository
+
+This repository contains a deliberately small set of public, sanitized case-study documents. The Nexus source code, internal operating records, and proprietary or employer-related files remain private.
 
 ## Contact
 
-* JB Monu
-* LinkedIn: [https://www.linkedin.com/in/jb-monu-9a58543](https://www.linkedin.com/in/jb-monu-9a58543)
-* GitHub: [https://github.com/jbmonu87](https://github.com/jbmonu87)
+- [LinkedIn](https://www.linkedin.com/in/jb-monu-9a58543)
+- [GitHub](https://github.com/jbmonu87)
