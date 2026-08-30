@@ -26,6 +26,26 @@ The Nexus workflow is designed around one principle: **the person accountable fo
 
 One person may sometimes perform more than one role, but the roles remain explicit. For higher-risk work, they are separated across different agent runs or reviewers.
 
+## How the run becomes inspectable
+
+The sequence is stored as more than a conversation. Each work item has a bounded identity; research, build, and verification runs have explicit roles; commits and evidence receipts connect those roles to the work; and the final disposition records whether the claim passed, failed, or was held.
+
+That produces an execution graph a reviewer can reconstruct:
+
+```mermaid
+flowchart LR
+    I[Intent] -->|becomes| W[Work item]
+    W -->|constrained by| A[Acceptance criteria]
+    A -->|guides| B[Builder run]
+    A -->|guides| V[Verifier run]
+    B -->|produces| C[Change]
+    C -->|tested by| V
+    V -->|returns evidence| H[Human decision]
+    H -->|updates| R[Operating rule]
+```
+
+The wider ambition is an artifact-and-evidence graph connecting claims, source material, edits, tests, and decisions. That remains a direction, not a completed public claim.
+
 ## Example of a bounded work packet
 
 ### Outcome
@@ -74,4 +94,4 @@ A useful completion record answers:
 
 This is a practical operating model for directing AI-assisted work. It is not a claim that every task needs multiple agents, that automated tests are infallible, or that human experts can be removed. The level of separation and evidence should match the consequence of being wrong.
 
-[Return to the overview](../README.md) · [Read the case study](CASE_STUDY.md) · [See current status](CURRENT_STATUS.md)
+[Return to the overview](../README.md) · [Read the case study](CASE_STUDY.md) · [Read one auditable run](AUDITABLE_RUN_CASE.md) · [See current status](CURRENT_STATUS.md)

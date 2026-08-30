@@ -38,6 +38,10 @@ The builder does not get to declare its own work correct. A passing automated ch
 
 In one class of Nexus work, automated evidence looked green while the visible result remained wrong. The check had observed a convenient proxy, not the behavior the user actually experienced.
 
+![The Nexus prototype showing the lesson that a green check can hide a broken result](../assets/nexus-live-verification-lesson.png)
+
+*Actual Nexus prototype with synthetic public content. The underlying lesson comes from a real verification run described in [One Auditable Run](AUDITABLE_RUN_CASE.md).*
+
 The valuable output was not merely a repaired feature. It was a stronger operating rule:
 
 - define the visible outcome before implementation;
