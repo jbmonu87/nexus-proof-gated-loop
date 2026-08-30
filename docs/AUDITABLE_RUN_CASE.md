@@ -28,7 +28,7 @@ The selector was correct. The interaction was still broken.
 
 ## The decision
 
-The result was classified as a product failure, not a pass and not an infrastructure excuse. The larger review stopped at that preflight rather than generating a misleading set of downstream results.
+The result was classified as a product failure. It did not count as a pass or an infrastructure problem. The larger review stopped at that preflight rather than generating a misleading set of downstream results.
 
 This mattered because continuing would have produced activity and counts without a trustworthy interaction foundation.
 

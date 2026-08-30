@@ -38,23 +38,15 @@ These statements describe a substantial prototype, not complete Office compatibi
 
 This portfolio is meant to show how I frame, direct, and verify AI-assisted work without exposing private source code, internal operating records, test fixtures, or third-party content. Public examples are rewritten and sanitized around the transferable method.
 
-## Public evidence added on August 30, 2026
+## Public evidence
+
+This case study includes:
 
 - two screenshots from the running Nexus prototype using synthetic, non-employer content;
 - the synthetic source deck used for those screenshots;
 - one sanitized run from requirement through failure classification and process change; and
-- an explicit boundary between the current execution graph and the incomplete artifact-and-evidence graph.
+- an explicit boundary between the current execution graph and the incomplete durable Nexus product graph.
 
 For the public demo, Nexus imported the synthetic PPTX into its native project container, reported the container as valid and saved, and reopened it with all three slides present.
-
-## What would make the public evidence stronger next
-
-The next additions should remain deliberately modest:
-
-1. a short narrated screen recording using the same synthetic deck;
-2. a fully sanitized evidence receipt with inputs, commands, and final disposition; and
-3. a second end-to-end run from a document or spreadsheet workflow.
-
-Those artifacts should be added only when they accurately reflect the running prototype and are safe to publish.
 
 [Return to the overview](../README.md) · [Read the case study](CASE_STUDY.md) · [See the workflow](WORKFLOW.md) · [Read one auditable run](AUDITABLE_RUN_CASE.md)

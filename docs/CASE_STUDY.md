@@ -32,7 +32,7 @@ I separated three kinds of work that AI systems often blur together:
 2. **Build:** make the bounded change without changing the success criteria.
 3. **Verification:** independently decide whether the evidence supports the claim.
 
-The builder does not get to declare its own work correct. A passing automated check can support a decision, but it does not replace judgment about whether the check observed the real user outcome.
+A different agent judges the builder's work. An automated check supports that decision only when it observes the real user outcome.
 
 ## A representative failure
 
@@ -40,12 +40,12 @@ In one class of Nexus work, automated evidence looked green while the visible re
 
 ![The Nexus prototype showing the lesson that a green check can hide a broken result](../assets/nexus-live-verification-lesson.png)
 
-*Actual Nexus prototype with synthetic public content. The underlying lesson comes from a real verification run described in [One Auditable Run](AUDITABLE_RUN_CASE.md).*
+*Screenshot from the running Nexus prototype using synthetic public content. The verification lesson comes from the real run described in [One Auditable Run](AUDITABLE_RUN_CASE.md).*
 
-The valuable output was not merely a repaired feature. It was a stronger operating rule:
+The lasting output was a stronger operating rule:
 
 - define the visible outcome before implementation;
-- confirm that the test can actually observe that outcome;
+- confirm that the test can observe that outcome;
 - prevent the builder from weakening the test to obtain a pass;
 - compare against known baseline failures before attributing a new failure; and
 - require a human smoke test when visual or interactive behavior matters.
@@ -85,7 +85,7 @@ The same pattern applies to business work involving research, analysis, document
 - test the real deliverable, not a convenient proxy; and
 - record failures as improvements to the process.
 
-That is the capability I am building through Nexus: not “prompting,” and not a claim to be an engineer, but the ability to turn AI capacity into useful, reviewable, human-owned work.
+Through Nexus, I am learning how to turn AI capacity into useful, reviewable, human-owned work. My contribution is product ownership and workflow design; I do not claim engineering authorship.
 
 ## Claim boundary
 

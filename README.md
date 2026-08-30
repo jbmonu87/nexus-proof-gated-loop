@@ -2,17 +2,17 @@
 
 > A public case study from a private, unshipped Office-style prototype.
 
-## The 20-second version
+## Overview
 
 I created Nexus to learn how to direct AI agents on work where errors are easy to generate and hard to hide. An Office-style product is a useful stress test: a file can open successfully while its layout, behavior, or saved state is still wrong.
 
 I am the creator and product owner. I set product direction, turn ambiguous goals into bounded work, define acceptance criteria, assign separate research, build, and verification roles, review the evidence, and perform final human smoke tests. AI coding agents perform most of the implementation work.
 
-Nexus is private R&D, not a shipped product or a public source-code project. This is a case study in product ownership and AI-enabled execution, not a software-engineering portfolio.
+Nexus is private R&D. The source code is not public. This case study focuses on how I direct and check AI-assisted product work.
 
 ![The current Nexus prototype showing an auditable five-stage AI workflow](assets/nexus-live-workflow-graph.png)
 
-*Actual Nexus prototype, captured August 30, 2026, rendering a synthetic deck made for this public case study. This is a product screenshot, not a reconstruction. The content is illustrative; it does not imply that every intended Nexus feature is complete.*
+*Screenshot from the running Nexus prototype, captured August 30, 2026. It uses the synthetic deck provided below; the product remains incomplete.*
 
 ## Why I built it
 
@@ -26,31 +26,41 @@ I wanted practical answers to questions that matter well beyond software develop
 
 Nexus gives me a demanding environment in which to test those questions rather than answer them only in theory.
 
-## The operating model
+## The operating loop
 
 ```mermaid
 flowchart LR
-    A[Human intent] --> B[Scope and acceptance criteria]
-    B --> C[Research and test design]
-    B --> D[Build]
-    C --> E[Independent verification]
-    D --> E
-    E -->|Evidence fails| B
-    E -->|Evidence passes| F[Human review]
-    F --> G[Capture the lesson]
+    A[Human outcome] --> B[Orchestrator<br/>scope + route]
+    B --> C[Proof gate<br/>defined before build]
+    C --> D[Build arc<br/>implement + check]
+    D --> E[Independent verify<br/>real path + persistence]
+    E -->|GREEN| F[Integrate + completion proof]
+    E -->|RED or HOLD| B
+    F --> G[Close + compound<br/>receipt · learning proposal]
+    G -. promoted rule .-> B
 ```
 
-The important idea is simple: **AI output is not proof.** The person accountable for the outcome decides what must be true, what evidence is sufficient, and whether the result is ready to use.
+After I approve an outcome, the primary orchestrator takes over the process. It scopes the item, chooses the work lane, sets up a separate workspace, and routes the agents. Before the build, it uses an existing biting test or commissions an independent gate. When evidence fails, it routes the next action.
 
-## The system is graph-shaped
+A second, bounded orchestrator owns the build arc and returns one evidence package. It cannot change the product goal, weaken the gate, approve its own work, or merge the result.
 
-I use graph language carefully. The value is not the diagram; it is preserving relationships that make work inspectable.
+The separation is deliberate. The agent that writes the gate is not the builder. The verifier is also a different agent from the builder. Human judgment comes back in for product or scope decisions, destructive actions, and final testing when the result has to be seen or felt.
 
-**The execution graph exists today.** A work item connects intent, scope, role-specific agent runs, evidence, and a human decision. Internally, the run graph can be reconstructed from branches, commits, role labels, and evidence receipts rather than from someone's memory of a chat.
+Agent output gives me something to inspect; it is not evidence by itself. I decide what must be true and whether the evidence is strong enough.
 
-**The artifact and evidence graph is a product direction.** The larger Nexus idea is to connect claims, source artifacts, edits, tests, and decisions so a person can trace why an output should be trusted. Parts of that model exist, but it is not complete enough to present as a finished capability.
+## What the graph records
 
-That is why I describe this work as **AI workflow architecture** or **building systemic AI workflows**, not as “graph engineering.”
+The diagram is a simplified view of an execution graph. A node is an auditable stage in one bounded work item.
+
+- The work item has one identity and one branch.
+- Role-labelled commits show who hardened the scope, wrote the gate, built, and verified.
+- Evidence and closeout events record whether the item passed, failed, was held, or later failed a human smoke test.
+
+That means the run can be reconstructed from its history instead of from someone's memory of a conversation.
+
+One run is temporary control flow: work moves through roles, handoffs, evidence, and a decision. The product model is different. It is a still-incomplete way to link workspaces, routines, runs, artifacts, views, and decisions through structure, lineage, and authority.
+
+[See the detailed loop, role boundaries, and compounding method](docs/WORKFLOW.md).
 
 ## What exists today
 
@@ -68,29 +78,17 @@ The run was stopped and recorded as a product failure. The workflow now treats t
 
 [Read the sanitized run case](docs/AUDITABLE_RUN_CASE.md).
 
-## What this work demonstrates
+## What I am testing
 
-- **Builder's judgment:** choosing a hard problem, making tradeoffs, and turning an idea into something testable
-- **AI workflow fluency:** directing agents with explicit context, roles, constraints, and stop conditions
-- **Product ownership:** defining the user outcome and deciding what is in or out of scope
-- **Operational discipline:** separating implementation from verification and requiring evidence before promotion
-- **Learning transfer:** converting failures into reusable practices for other business workflows
-
-It does **not** demonstrate that I personally wrote every line of code, that the system is production-ready, or that AI removes the need for technical experts and human accountability.
+Nexus is where I practice turning an ambiguous need into a bounded piece of AI-assisted work, checking it against a real outcome, and changing the process when the evidence exposes a flaw. AI agents produce most of the implementation code. The product remains a private prototype, and technical specialists and human accountability remain necessary.
 
 ## Explore the case study
 
-1. [Case Study](docs/CASE_STUDY.md) — the problem, my role, a representative failure, and the lessons I would carry into a business
-2. [Working With AI Agents](docs/WORKFLOW.md) — the operating loop, role boundaries, and a sample work packet
-3. [One Auditable Run](docs/AUDITABLE_RUN_CASE.md) — a sanitized example of a product failure becoming a stronger verification rule
-4. [Current Status](docs/CURRENT_STATUS.md) — what exists, what remains incomplete, and what I am not claiming
-5. [Synthetic demo deck](assets/demo/nexus-public-safe-workflow-demo.pptx) — the public-safe input used for the screenshots
-
-## Resume-safe description
-
-> Created Nexus, a private Office-style prototype, to learn how to direct AI agents on complex work where visible behavior and file fidelity make errors difficult to hide. Own product direction, task decomposition, acceptance criteria, agent routing, evidence review, and final human testing; AI coding agents perform most implementation work.
-
-Suggested resume link label: **Nexus case study: building accountable AI workflows**.
+1. [Case Study](docs/CASE_STUDY.md): the problem, my role, a representative failure, and the lessons I would carry into a business
+2. [Working With AI Agents](docs/WORKFLOW.md): the operating loop, role boundaries, and a sample work packet
+3. [One Auditable Run](docs/AUDITABLE_RUN_CASE.md): a sanitized example of a product failure becoming a stronger verification rule
+4. [Current Status](docs/CURRENT_STATUS.md): what exists, what remains incomplete, and the limits of my claims
+5. [Synthetic demo deck](assets/demo/nexus-public-safe-workflow-demo.pptx): the public-safe input used for the screenshots
 
 ## About this repository
 
