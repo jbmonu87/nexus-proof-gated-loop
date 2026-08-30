@@ -94,6 +94,8 @@ Nexus is where I practice turning an ambiguous need into a bounded piece of AI-a
 
 This repository contains a deliberately small set of public, sanitized case-study documents. The Nexus source code, internal operating records, and proprietary or employer-related files remain private.
 
+**Documentation note:** This README and its supporting documents were drafted and revised with LLM assistance. I set the scope, operating model, evidence standards, and claim boundaries, and I remain responsible for the final result.
+
 ## Contact
 
 - [LinkedIn](https://www.linkedin.com/in/jb-monu-9a58543)
