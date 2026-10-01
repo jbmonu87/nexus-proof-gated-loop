@@ -21,12 +21,14 @@ Both full-scale scenarios hold volume and price constant. All financial figures 
 | Direct cost as share of revenue | 62% | 70% |
 | Direct cost | $620,000 | $700,000 |
 | Fixed cost | $260,000 | $260,000 |
-| Contribution | $120,000 | $40,000 |
-| Contribution margin | 12% | 4% |
+| Operating surplus | $120,000 | $40,000 |
+| Surplus margin | 12% | 4% |
 
-Revenue = sites × visits per site × revenue per visit. Contribution = revenue − direct cost − fixed cost. The difference between the two contribution results is $80,000.
+Here, **modeled operating surplus** means revenue less the listed direct and fixed costs, before tax and financing. It is a simplified scenario measure, not a complete profit-and-loss statement. **Surplus margin** is that amount divided by revenue.
 
-The workbook includes formulas for these results. An authoring-engine check reproduced the base and downside calculations; a temporary 75% cost assumption produced negative $10,000 contribution, then the input was restored to 70%. This check was performed outside Nexus. No Nexus recalculation claim follows from it.
+Revenue = sites × visits per site × revenue per visit. Operating surplus = revenue − direct cost − fixed cost. The difference between the two operating surplus results is $80,000.
+
+The workbook includes formulas for these results. An authoring-engine check reproduced the base and downside calculations; a temporary 75% cost assumption produced negative $10,000 operating surplus, then the input was restored to 70%. This check was performed outside Nexus. No Nexus recalculation claim follows from it.
 
 ## Judgment matters
 
@@ -36,7 +38,7 @@ A five-site pilot is a proposed way to learn, not an optimized or demonstrated i
 
 ## In the real Nexus editor
 
-![The contribution comparison in the Nexus presentation editor](../assets/nexus-northstar-decision.jpg)
+![The operating surplus comparison in the Nexus presentation editor](../assets/nexus-northstar-decision.jpg)
 
 ![The assumptions and pilot evidence in the Nexus presentation editor](../assets/nexus-northstar-scenarios.jpg)
 
@@ -46,7 +48,7 @@ A five-site pilot is a proposed way to learn, not an optimized or demonstrated i
 
 The screenshots are unaltered app-window captures. They are not generated product mockups. They show the artifacts in Nexus after importing PPTX, DOCX, and XLSX inputs into native containers.
 
-During this demonstration, the workbook title was shortened inside Nexus. The title and displayed values survived native save and tab close/reopen. Applied currency and percentage display formats did not survive that tab reopen. Zoom changes also marked the workbook unsaved, as visible in the capture. This is a working-view screenshot, not proof of complete formatting persistence or a cold application restart.
+In an earlier capture iteration, the workbook title was shortened inside Nexus. The title and displayed values survived native save and tab close/reopen. Applied currency and percentage display formats did not survive that tab reopen. Zoom changes also marked the workbook unsaved, as visible in the capture. This is a working-view screenshot, not proof of complete formatting persistence or a cold application restart.
 
 ## Download the inputs
 
@@ -54,7 +56,7 @@ During this demonstration, the workbook title was shortened inside Nexus. The ti
 - [Decision memo](../assets/demo/northstar-pilot-decision.docx)
 - [Financial model with formulas](../assets/demo/northstar-pilot-economics.xlsx)
 
-These files were authored for this portfolio with AI assistance using document-generation libraries outside Nexus, then imported for the captures. The downloadable inputs precede the native workbook title edit. They are not exports from Nexus and do not demonstrate autonomous in-app generation.
+These files were authored for this portfolio with AI assistance using document-generation libraries outside Nexus, then imported for the captures. The downloadable inputs precede that native workbook title edit. The final captures use fresh import filenames for the corrected inputs; the final model view retains the input's original title. They are not exports from Nexus and do not demonstrate autonomous in-app generation.
 
 ## Capture provenance
 

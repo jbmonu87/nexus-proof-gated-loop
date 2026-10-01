@@ -6,7 +6,7 @@ I’m JB Monu. I design workflows that turn AI capacity into useful, reviewable 
 
 I own product direction, workflow design, acceptance standards, and final judgment. AI coding agents perform most implementation work. My contribution is connecting the problem, the agents, the evidence, and the decision.
 
-![Nexus displaying a synthetic business decision with an imported contribution chart](assets/nexus-northstar-decision.jpg)
+![Nexus displaying a synthetic business decision with an imported operating surplus chart](assets/nexus-northstar-decision.jpg)
 
 *Real Nexus window capture, October 1, 2026. Fictional company and synthetic data. The downloadable presentation was authored with AI assistance outside Nexus, then imported and displayed in its native editor. [Demo provenance and limits](docs/BUSINESS_WORKFLOW_CASE.md).*
 
@@ -15,18 +15,22 @@ I own product direction, workflow design, acceptance standards, and final judgme
 | Capability | Evidence in this portfolio |
 | --- | --- |
 | Turn an ambiguous goal into accountable work | Bounded outcomes, explicit exclusions, and acceptance standards in the [operating workflow](docs/WORKFLOW.md) |
-| Design agentic orchestration | A primary orchestrator, a bounded build orchestrator, and independent proof roles in an [implemented execution graph](docs/EXECUTION_GRAPH.md) |
-| Challenge apparently successful AI output | A [successful verification case](docs/SUCCESSFUL_RUN_CASE.md) with a deletion control, alongside a [recorded interaction failure](docs/AUDITABLE_RUN_CASE.md) |
+| Design agentic orchestration | A primary orchestrator, a bounded build orchestrator, and independent proof roles in the [execution-graph design](docs/EXECUTION_GRAPH.md) |
+| Challenge apparently successful AI output | An [acceptance-design example](docs/SUCCESSFUL_RUN_CASE.md) alongside a [recorded interaction failure](docs/AUDITABLE_RUN_CASE.md) |
 | Connect analysis to a business decision | A [synthetic strategy case](docs/BUSINESS_WORKFLOW_CASE.md) linking an editable model, decision memo, and presentation |
 | Keep claims proportional to evidence | Dated [status and known limitations](docs/CURRENT_STATUS.md), including issues found during this showcase |
 
 These are relevant to strategy, operations, program management, and AI adoption work: defining the right question, coordinating execution, reviewing evidence, and communicating a decision. Nexus is a concrete example of that practice.
 
+## One judgment call I own
+
+I made preservation a product requirement: a feature Nexus cannot render must still survive save. Unsupported content is not permission to discard someone’s work. That standard shapes acceptance checks and the decision to disclose or refuse unsupported edits. It is a requirement I hold the project to; complete preservation has not yet been demonstrated.
+
 ## From prompting to orchestrating
 
 After I approve an outcome, Claude Code’s primary orchestrator owns routine routing, sequencing, setup, verification, and integration. A bounded build orchestrator handles implementation and retries within the locked outcome. When a harness boundary requires it, I relay one brief and one return; product and scope decisions remain mine.
 
-The graph is more than a diagram. Its private implementation defines states, role ownership, required evidence, and repair paths. The verification acceptance path checks named agent identities and evidence against the dispatched work. This is **execution-graph design and agentic orchestration**, with AI agents implementing much of the code.
+I use the graph to make states, role ownership, required evidence, and repair paths explicit. This is **execution-graph design and agentic orchestration**, with AI agents implementing much of the code.
 
 The gate writer and verifier are each different agents from the builder. A passing report does not authorize the builder to approve itself.
 
@@ -43,9 +47,9 @@ flowchart LR
 
 *Simplified development workflow. It is separate from the still-incomplete graph and assistant capabilities inside the Nexus product. Routine process autonomy does not mean unattended success on every item.*
 
-[Inspect the graph design and its evidence boundaries](docs/EXECUTION_GRAPH.md).
+[Read the graph design and its evidence boundaries](docs/EXECUTION_GRAPH.md).
 
-## A stronger view of the product
+## Nexus in use
 
 The Northstar example asks whether a fictional field-services business should expand immediately or run a five-site pilot. The model makes an $80,000 monthly cost sensitivity visible; the memo explains what the model cannot establish.
 
@@ -55,13 +59,11 @@ The Northstar example asks whether a fictional field-services business should ex
 
 [See the scenario slide, workbook view, assumptions, and downloadable files](docs/BUSINESS_WORKFLOW_CASE.md).
 
-## Evidence that the loop can catch the real failure
+## Make failure observable
 
-In an October 1 verification report, an independent agent checked whether removing a DOCX host bullet survived native save and a full quit/reopen. The scoped gates and a 57-case parity bank passed. Deleting the reader repair made the relevant persistence checks fail again.
+A document edit should survive save and reopen. A passing check is useful only when it observes that durable outcome and can detect removal of the relevant repair. The [acceptance-design example](docs/SUCCESSFUL_RUN_CASE.md) explains this standard without claiming a private verification result.
 
-That provides a stronger example than a green badge: the check reacted to removing the fix. The public case preserves the narrow scope, the export refusal, and the distinction between a private report and a publicly reproducible test.
-
-[Read the scoped successful run](docs/SUCCESSFUL_RUN_CASE.md).
+The [recorded interaction failure](docs/AUDITABLE_RUN_CASE.md) shows why an apparently correct target can still be inadequate evidence of a usable interaction.
 
 ## Project status
 
@@ -71,9 +73,9 @@ Nexus remains private, unshipped R&D with no production customers. Office export
 
 - [Case study: my role and transferable practice](docs/CASE_STUDY.md)
 - [Workflow: authority, handoffs, and review](docs/WORKFLOW.md)
-- [Execution graph: implemented controls and boundaries](docs/EXECUTION_GRAPH.md)
+- [Execution graph: roles and authority boundaries](docs/EXECUTION_GRAPH.md)
 - [Business work sample: model → memo → presentation](docs/BUSINESS_WORKFLOW_CASE.md)
-- [Successful run](docs/SUCCESSFUL_RUN_CASE.md) · [Failure case](docs/AUDITABLE_RUN_CASE.md) · [Current status](docs/CURRENT_STATUS.md)
+- [Acceptance-design example](docs/SUCCESSFUL_RUN_CASE.md) · [Failure case](docs/AUDITABLE_RUN_CASE.md) · [Current status](docs/CURRENT_STATUS.md)
 
 This repository contains sanitized portfolio material, not the private Nexus source. Documentation and showcase artifacts were drafted and revised with LLM assistance; I remain responsible for what I publish.
 

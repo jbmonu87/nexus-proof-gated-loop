@@ -44,9 +44,9 @@ The primary orchestrator synthesizes that work and locks the acceptance standard
 
 The two proof boundaries are fixed: the gate writer and verifier must each be different agents from the builder. Model-family diversity is useful when it is cheap; agent independence matters more than brand names.
 
-## Implemented execution graph
+## Execution-graph design
 
-The October 1 source review found a version-9 state-machine definition and evidence-bound verification acceptance checks. [See the inspected controls and their limits](EXECUTION_GRAPH.md). The graph is part of the development workflow; it is separate from the incomplete Nexus product graph.
+[See the stages, responsibilities, and evidence boundaries](EXECUTION_GRAPH.md). The graph is part of the development workflow; it is separate from the incomplete Nexus product graph.
 
 ## How the run becomes inspectable
 
@@ -141,4 +141,4 @@ A useful completion record answers:
 
 Low-risk work can use fewer roles. Higher-risk work earns more separation and stronger evidence. Automated checks remain fallible, and human experts remain responsible for consequential decisions.
 
-[Return to the overview](../README.md) · [Read the case study](CASE_STUDY.md) · [Read a successful run](SUCCESSFUL_RUN_CASE.md) · [Read a failure case](AUDITABLE_RUN_CASE.md) · [See current status](CURRENT_STATUS.md)
+[Return to the overview](../README.md) · [Read the case study](CASE_STUDY.md) · [Read an acceptance-design example](SUCCESSFUL_RUN_CASE.md) · [Read a failure case](AUDITABLE_RUN_CASE.md) · [See current status](CURRENT_STATUS.md)

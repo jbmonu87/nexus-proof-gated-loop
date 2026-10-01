@@ -12,14 +12,15 @@ The primary orchestrator handles routine process decisions after approval. A bou
 
 This is the practical work behind my positioning as an AI workflow designer and product builder.
 
+## A product decision I own
+
+I require unsupported file properties to survive save. Existing business files belong to the user; an editor’s support limit is not authority to silently remove their content. That decision prioritizes preservation and explicit limits over a superficially successful save. Complete preservation remains an unmet proof obligation, not a guarantee presented in this portfolio.
+
 ## What the evidence shows
 
-The portfolio now pairs two development cases:
+The portfolio combines a [recorded interaction failure](AUDITABLE_RUN_CASE.md), an [illustrative durable-edit acceptance standard](SUCCESSFUL_RUN_CASE.md), and the real prototype captures in the synthetic business work sample.
 
-- A [failed interaction](AUDITABLE_RUN_CASE.md), where a correct target identity did not prove a usable click point.
-- A [scoped persistence success](SUCCESSFUL_RUN_CASE.md), where independent checks passed and deleting the reader repair made the relevant checks fail again.
-
-Both are useful. One shows willingness to reject inadequate evidence; the other shows a test that responds to the actual repair.
+The failure case shows why a correct target identity does not prove a usable click point. The acceptance example explains how I require evidence to challenge a claim; it does not publish a private test outcome.
 
 ## Connecting the method to business work
 
