@@ -56,7 +56,7 @@ In an earlier capture iteration, the workbook title was shortened inside Nexus. 
 - [Decision memo](../assets/demo/northstar-pilot-decision.docx)
 - [Financial model with formulas](../assets/demo/northstar-pilot-economics.xlsx)
 
-These files were authored for this portfolio with AI assistance using document-generation libraries outside Nexus, then imported for the captures. The downloadable inputs precede that native workbook title edit. The final captures use fresh import filenames for the corrected inputs; the final model view retains the input's original title. They are not exports from Nexus and do not demonstrate autonomous in-app generation.
+These files were authored for this portfolio with AI assistance using document-generation libraries outside Nexus, then imported for the captures. The downloads are the corrected source inputs; they do not include the title edit made in the earlier capture iteration. The final captures use fresh import filenames for the corrected inputs; the final model view retains the input's original title. They are not exports from Nexus and do not demonstrate autonomous in-app generation.
 
 ## Capture provenance
 
