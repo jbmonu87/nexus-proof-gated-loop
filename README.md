@@ -1,102 +1,80 @@
-# Nexus: Building Reliably With AI Agents
+# Nexus: AI Workflow Design in Practice
 
-> A public case study from a private, unshipped Office-style prototype.
+**AI workflow design · Agentic orchestration · Evidence-led knowledge work**
 
-## Overview
+I’m JB Monu. I design workflows that turn AI capacity into useful, reviewable work. Nexus is my private R&D project: a local-first desktop workspace for business strategy, with native presentation, document, and spreadsheet editors.
 
-I created Nexus to learn how to direct AI agents on work where errors are easy to generate and hard to hide. An Office-style product is a useful stress test: a file can open successfully while its layout, behavior, or saved state is still wrong.
+I own product direction, workflow design, acceptance standards, and final judgment. AI coding agents perform most implementation work. My contribution is connecting the problem, the agents, the evidence, and the decision.
 
-I am the creator and product owner. I set product direction, turn ambiguous goals into bounded work, define acceptance criteria, assign separate research, build, and verification roles, review the evidence, and perform final human smoke tests. AI coding agents perform most of the implementation work.
+![Nexus displaying a synthetic business decision with an imported contribution chart](assets/nexus-northstar-decision.jpg)
 
-Nexus is private R&D. The source code is not public. This case study focuses on how I direct and check AI-assisted product work.
+*Real Nexus window capture, October 1, 2026. Fictional company and synthetic data. The downloadable presentation was authored with AI assistance outside Nexus, then imported and displayed in its native editor. [Demo provenance and limits](docs/BUSINESS_WORKFLOW_CASE.md).*
 
-![The current Nexus prototype showing an auditable five-stage AI workflow](assets/nexus-live-workflow-graph.png)
+## What I bring to a team
 
-*Screenshot from the running Nexus prototype, captured August 30, 2026. It uses the synthetic deck provided below; the product remains incomplete.*
+| Capability | Evidence in this portfolio |
+| --- | --- |
+| Turn an ambiguous goal into accountable work | Bounded outcomes, explicit exclusions, and acceptance standards in the [operating workflow](docs/WORKFLOW.md) |
+| Design agentic orchestration | A primary orchestrator, a bounded build orchestrator, and independent proof roles in an [implemented execution graph](docs/EXECUTION_GRAPH.md) |
+| Challenge apparently successful AI output | A [successful verification case](docs/SUCCESSFUL_RUN_CASE.md) with a deletion control, alongside a [recorded interaction failure](docs/AUDITABLE_RUN_CASE.md) |
+| Connect analysis to a business decision | A [synthetic strategy case](docs/BUSINESS_WORKFLOW_CASE.md) linking an editable model, decision memo, and presentation |
+| Keep claims proportional to evidence | Dated [status and known limitations](docs/CURRENT_STATUS.md), including issues found during this showcase |
 
-## Why I built it
+These are relevant to strategy, operations, program management, and AI adoption work: defining the right question, coordinating execution, reviewing evidence, and communicating a decision. Nexus is a concrete example of that practice.
 
-I wanted practical answers to questions that matter well beyond software development:
+## From prompting to orchestrating
 
-- How do you give an AI agent enough context without giving it an unbounded assignment?
-- How do you know a confident answer or passing test reflects the real outcome?
-- When should one agent build while another independently verifies?
-- What evidence should a human require before accepting the work?
-- How do lessons become a better operating process instead of disappearing into chat history?
+After I approve an outcome, Claude Code’s primary orchestrator owns routine routing, sequencing, setup, verification, and integration. A bounded build orchestrator handles implementation and retries within the locked outcome. When a harness boundary requires it, I relay one brief and one return; product and scope decisions remain mine.
 
-Nexus gives me a demanding environment in which to test those questions rather than answer them only in theory.
+The graph is more than a diagram. Its private implementation defines states, role ownership, required evidence, and repair paths. The verification acceptance path checks named agent identities and evidence against the dispatched work. This is **execution-graph design and agentic orchestration**, with AI agents implementing much of the code.
 
-## The operating loop
+The gate writer and verifier are each different agents from the builder. A passing report does not authorize the builder to approve itself.
 
-```mermaid
+~~~mermaid
 flowchart LR
-    A[Human outcome] --> B[Orchestrator<br/>scope + route]
-    B --> C[Proof gate<br/>defined before build]
-    C --> D[Build arc<br/>implement + check]
-    D --> E[Independent verify<br/>real path + persistence]
-    E -->|GREEN| F[Integrate + completion proof]
-    E -->|RED or HOLD| B
-    F --> G[Close + compound<br/>receipt · learning proposal]
-    G -. promoted rule .-> B
-```
+    A[Human approves outcome] --> B[Scope and proof contract]
+    B --> C[Independent gate]
+    C --> D[Bounded build]
+    D --> E[Independent verification]
+    E -->|Evidence supports claim| F[Integration and completion proof]
+    E -->|Failure or contradiction| B
+    F --> G[Record outcome and review learning]
+~~~
 
-After I approve an outcome, the primary orchestrator takes over the process. It scopes the item, chooses the work lane, sets up a separate workspace, and routes the agents. Before the build, it uses an existing biting test or commissions an independent gate. When evidence fails, it routes the next action.
+*Simplified development workflow. It is separate from the still-incomplete graph and assistant capabilities inside the Nexus product. Routine process autonomy does not mean unattended success on every item.*
 
-A second, bounded orchestrator owns the build arc and returns one evidence package. It cannot change the product goal, weaken the gate, approve its own work, or merge the result.
+[Inspect the graph design and its evidence boundaries](docs/EXECUTION_GRAPH.md).
 
-The separation is deliberate. The agent that writes the gate is not the builder. The verifier is also a different agent from the builder. Human judgment comes back in for product or scope decisions, destructive actions, and final testing when the result has to be seen or felt.
+## A stronger view of the product
 
-Agent output gives me something to inspect; it is not evidence by itself. I decide what must be true and whether the evidence is strong enough.
+The Northstar example asks whether a fictional field-services business should expand immediately or run a five-site pilot. The model makes an $80,000 monthly cost sensitivity visible; the memo explains what the model cannot establish.
 
-## What the graph records
+![Nexus displaying the synthetic decision memo](assets/nexus-northstar-memo.jpg)
 
-The diagram is a simplified view of an execution graph. A node is an auditable stage in one bounded work item.
+*Real document-editor capture, October 1, 2026. The memo was authored with AI assistance, then imported into Nexus. This is a constructed work sample, with no claimed client engagement or business impact.*
 
-- The work item has one identity and one branch.
-- Role-labelled commits show who hardened the scope, wrote the gate, built, and verified.
-- Evidence and closeout events record whether the item passed, failed, was held, or later failed a human smoke test.
+[See the scenario slide, workbook view, assumptions, and downloadable files](docs/BUSINESS_WORKFLOW_CASE.md).
 
-That means the run can be reconstructed from its history instead of from someone's memory of a conversation.
+## Evidence that the loop can catch the real failure
 
-One run is temporary control flow: work moves through roles, handoffs, evidence, and a decision. The product model is different. It is a still-incomplete way to link workspaces, routines, runs, artifacts, views, and decisions through structure, lineage, and authority.
+In an October 1 verification report, an independent agent checked whether removing a DOCX host bullet survived native save and a full quit/reopen. The scoped gates and a 57-case parity bank passed. Deleting the reader repair made the relevant persistence checks fail again.
 
-[See the detailed loop, role boundaries, and compounding method](docs/WORKFLOW.md).
+That provides a stronger example than a green badge: the check reacted to removing the fix. The public case preserves the narrow scope, the export refusal, and the distinction between a private report and a publicly reproducible test.
 
-## What exists today
+[Read the scoped successful run](docs/SUCCESSFUL_RUN_CASE.md).
 
-The private prototype currently demonstrates import, editing, and saved project state across presentation, document, and spreadsheet workflows. It also provides a real environment for testing role-separated agent work, evidence requirements, and human review.
+## Project status
 
-The prototype is far from complete. Office-format export is incomplete, editing coverage is uneven, visual and behavioral fidelity still have known gaps, and Nexus has no production customers or public release.
+Nexus remains private, unshipped R&D with no production customers. Office export, editing coverage, preservation, and fidelity remain incomplete. The screenshots show particular imported files in a local prototype; they do not establish complete Office compatibility.
 
-[Read the dated status and claim boundaries](docs/CURRENT_STATUS.md).
+## Explore
 
-## One concrete lesson
+- [Case study: my role and transferable practice](docs/CASE_STUDY.md)
+- [Workflow: authority, handoffs, and review](docs/WORKFLOW.md)
+- [Execution graph: implemented controls and boundaries](docs/EXECUTION_GRAPH.md)
+- [Business work sample: model → memo → presentation](docs/BUSINESS_WORKFLOW_CASE.md)
+- [Successful run](docs/SUCCESSFUL_RUN_CASE.md) · [Failure case](docs/AUDITABLE_RUN_CASE.md) · [Current status](docs/CURRENT_STATUS.md)
 
-A recent verification run targeted the correct slide element, but the click still failed. The element's center point was covered by a transform handle, so the intended control never received the interaction. A valid selector had proved source identity, not usable interaction geometry.
+This repository contains sanitized portfolio material, not the private Nexus source. Documentation and showcase artifacts were drafted and revised with LLM assistance; I remain responsible for what I publish.
 
-The run was stopped and recorded as a product failure. The workflow now treats target identity and click geometry as separate proof obligations and requires the actual topmost element at the click point when diagnosing this class of failure.
-
-[Read the sanitized run case](docs/AUDITABLE_RUN_CASE.md).
-
-## What I am testing
-
-Nexus is where I practice turning an ambiguous need into a bounded piece of AI-assisted work, checking it against a real outcome, and changing the process when the evidence exposes a flaw. AI agents produce most of the implementation code. The product remains a private prototype, and technical specialists and human accountability remain necessary.
-
-## Explore the case study
-
-1. [Case Study](docs/CASE_STUDY.md): the problem, my role, a representative failure, and the lessons I would carry into a business
-2. [Working With AI Agents](docs/WORKFLOW.md): the operating loop, role boundaries, and a sample work packet
-3. [One Auditable Run](docs/AUDITABLE_RUN_CASE.md): a sanitized example of a product failure becoming a stronger verification rule
-4. [Current Status](docs/CURRENT_STATUS.md): what exists, what remains incomplete, and the limits of my claims
-5. [Synthetic demo deck](assets/demo/nexus-public-safe-workflow-demo.pptx): the public-safe input used for the screenshots
-
-## About this repository
-
-This repository contains a deliberately small set of public, sanitized case-study documents. The Nexus source code, internal operating records, and proprietary or employer-related files remain private.
-
-**Documentation note:** This README and its supporting documents were drafted and revised with LLM assistance. I set the scope, operating model, evidence standards, and claim boundaries, and I remain responsible for the final result.
-
-## Contact
-
-- [LinkedIn](https://www.linkedin.com/in/jb-monu-9a58543)
-- [GitHub](https://github.com/jbmonu87)
+[LinkedIn](https://www.linkedin.com/in/jb-monu-9a58543) · [GitHub](https://github.com/jbmonu87)

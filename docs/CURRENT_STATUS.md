@@ -1,52 +1,44 @@
 # Current Status and Claim Boundaries
 
-- **Status date:** August 30, 2026
-- **Project:** Private research and development
-- **Release state:** Unshipped
+**Updated October 1, 2026 · Private, unshipped R&D · No production customers**
 
-This page exists so a reader can distinguish what Nexus demonstrates today from the larger product vision.
+## Evidence reviewed for this update
 
-## Demonstrated in the current private prototype
+| Evidence | What it establishes | What it does not establish |
+| --- | --- | --- |
+| October 1 Nexus window captures | This synthetic PPTX, DOCX, and XLSX imported into native containers; particular slides, chart, memo, and values displayed | Every import format, pixel fidelity, or broad editor functionality |
+| Workbook edit, save, tab close/reopen | Shortened title and displayed values retained in this demonstration | Cold restart durability or complete formatting persistence |
+| Private execution-graph source inspection | State/role/evidence contracts and verification acceptance checks exist in the inspected source | Runtime correctness of every path or use by every historical run |
+| October 1 independent DOCX verification report | Reported scoped gates, parity checks, deletion control, and cold real-app probes | A new portfolio-session rerun or general DOCX compatibility |
+| August 30 public demonstration | Earlier synthetic presentation and recorded interaction failure | Current release readiness |
 
-- a desktop product shell with presentation, document, and spreadsheet work surfaces;
-- importing files into Nexus project workflows;
-- a subset of editing interactions across those work surfaces;
-- saving and reopening Nexus project state; and
-- a working practice for scoped agent assignments, evidence review, and final human testing.
+The screenshots used an existing local dist build whose source commit was not established. The source inspection and verification-report summary are separate evidence; they should not be treated as the build provenance of these captures.
 
-These statements describe a substantial prototype, not complete Office compatibility.
+## A gap found during the showcase
+
+Currency and percentage display formats applied inside Nexus did not survive workbook tab close/reopen in this session. The title edit and displayed values did survive. Zoom changes also marked the model unsaved. These observations are recorded rather than presented as formatting-persistence success.
 
 ## Incomplete or uneven
 
-- export back to standard Office formats;
-- breadth and polish of editing behavior;
-- visual fidelity across complex files;
-- durable preservation of every unsupported file feature;
-- end-to-end coverage of all intended workflows; and
-- product-level usability and reliability.
+- Office-format export and support for many edit classes;
+- editing breadth and product polish;
+- import/render fidelity across complex files;
+- demonstrated preservation of every unsupported feature;
+- end-to-end reliability across the intended business workflows;
+- the durable in-app product graph and assistant capabilities.
 
-## Not being claimed
+Preserving unsupported data is a product requirement, not a claim that complete preservation has been achieved.
 
-- a shipped or commercially available product;
-- production customers, revenue, or enterprise deployment;
-- a full Microsoft Office replacement;
-- autonomous AI development without expert or human review;
-- that I personally authored all implementation code; or
-- that this public repository contains the Nexus source code.
+## Authorship and autonomy
 
-## Why the source remains private
+I own the product direction and operating design. AI coding agents perform most implementation work. Routine orchestration is delegated after approval; product and material scope decisions remain human-owned. Cross-harness work can still require a mechanical relay.
 
-This portfolio is meant to show how I frame, direct, and verify AI-assisted work without exposing private source code, internal operating records, test fixtures, or third-party content. Public examples are rewritten and sanitized around the transferable method.
+The development execution graph is distinct from the incomplete business-work graph within Nexus. Screenshots of assistant controls are not evidence of end-to-end autonomous in-app analysis or generation.
 
-## Public evidence
+## Public material
 
-This case study includes:
+This repository contains real prototype captures, synthetic downloadable inputs, source-inspection summaries, and sanitized success/failure cases. It does not contain the Nexus source, complete private test logs, production deployments, customer outcomes, or a claim of engineering credentials.
 
-- two screenshots from the running Nexus prototype using synthetic, non-employer content;
-- the synthetic source deck used for those screenshots;
-- one sanitized run from requirement through failure classification and process change; and
-- an explicit boundary between the current execution graph and the incomplete durable Nexus product graph.
+The Northstar work sample is constructed and AI-assisted. Its dollar figures are hypothetical, not savings, revenue, investment results, or market estimates.
 
-For the public demo, Nexus imported the synthetic PPTX into its native project container, reported the container as valid and saved, and reopened it with all three slides present.
-
-[Return to the overview](../README.md) · [Read the case study](CASE_STUDY.md) · [See the workflow](WORKFLOW.md) · [Read one auditable run](AUDITABLE_RUN_CASE.md)
+[Overview](../README.md) · [Work sample and provenance](BUSINESS_WORKFLOW_CASE.md) · [Successful run](SUCCESSFUL_RUN_CASE.md) · [Graph design](EXECUTION_GRAPH.md)
