@@ -55,9 +55,7 @@ The differently named final import copies were copies of the corrected inputs. T
 
 My explicit intervention was the brief: update the portfolio, use synthetic content, capture the product, and obtain an adversarial review. The agents carried out artifact production, app interaction, review, and routine correction within that task.
 
-The reviewer was a different agent from the working agent. This does not establish statistically independent reasoning or a blind review.
-
-The run also encountered publication approval limits. The final pages omit private source contracts and private verification outcomes; an illustrative acceptance example is labeled as such.
+The reviewer was a separate agent with access to the task context.
 
 ## What this run does and does not show
 

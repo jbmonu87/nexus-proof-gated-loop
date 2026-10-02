@@ -22,7 +22,7 @@ The operating model separates three kinds of work:
 
 The agent chooses a proposed next action. The guarded workflow can refuse it when its prerequisites are not met. This is a combination of model judgment and programmatic checks, rather than a claim that every decision is hardcoded or every step is unattended.
 
-The [public run walkthrough](RUN_WALKTHROUGH.md) shows one bounded Codex-assisted review-and-revision cycle. It is separate from this complete development operating model.
+The [public run walkthrough](RUN_WALKTHROUGH.md) shows one bounded Codex-assisted review-and-revision cycle. It is separate from the broader Nexus development workflow.
 
 ## What the graph makes explicit
 
