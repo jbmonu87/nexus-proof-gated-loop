@@ -10,6 +10,20 @@ After I approve an outcome, the primary orchestrator handles routine routing and
 
 When direct transport across harnesses is unavailable, I may relay one brief and one return. That is a remaining transport dependency.
 
+## Who decides, what gets checked, and where people remain involved
+
+The operating model separates three kinds of work:
+
+| Part | Responsibility | Boundary |
+| --- | --- | --- |
+| Agent judgment | Diagnose, break down the approved outcome, select the next useful role, and propose a response to new evidence | An agent cannot redefine the product outcome or approve its own implementation |
+| Code-based checks | Validate recorded workflow state and required evidence before a guarded step advances | A valid record does not prove the product works or that the evidence measures the right thing |
+| Human judgment | Choose the problem, intended behavior, material scope, and consequential tradeoffs; judge the actual user experience when needed | Routine routing and retries are delegated within the approved outcome |
+
+The agent chooses a proposed next action. The guarded workflow can refuse it when its prerequisites are not met. This is a combination of model judgment and programmatic checks, rather than a claim that every decision is hardcoded or every step is unattended.
+
+The [public run walkthrough](RUN_WALKTHROUGH.md) shows one bounded Codex-assisted review-and-revision cycle. It is separate from this complete development operating model.
+
 ## What the graph makes explicit
 
 | Stage | Responsibility | Required distinction |

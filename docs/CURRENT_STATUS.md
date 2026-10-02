@@ -1,6 +1,6 @@
 # Current Status and Claim Boundaries
 
-**Updated October 1, 2026 · Private, unshipped R&D · No production customers**
+**Updated October 2, 2026 · Private, unshipped R&D · No production customers**
 
 ## Evidence reviewed for this update
 
@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | October 1 Nexus window captures | These synthetic PPTX, DOCX, and XLSX inputs imported into native containers; particular slides, chart, memo, and values displayed | Every import format, pixel fidelity, or broad editor functionality |
 | Workbook edit, save, tab close/reopen | Shortened title and displayed values retained in an earlier capture iteration | Cold restart durability or complete formatting persistence |
+| October 1 showcase review and public revisions | A bounded Codex-assisted review-and-revision cycle with changed public artifacts | Execution of Claude Primary's full development graph, a complete public agent trace, or general autonomy |
 | August 30 public demonstration | Earlier synthetic presentation and recorded interaction failure | Current release readiness |
 
 The screenshots used an existing local dist build whose source commit was not established. The workflow design pages describe operating practice; they do not establish the build provenance of these captures.
@@ -37,8 +38,8 @@ The development execution graph is distinct from the incomplete business-work gr
 
 ## Public material
 
-This repository contains real prototype captures, synthetic downloadable inputs, operating-design descriptions, and a recorded failure case and an illustrative acceptance standard. It does not contain the Nexus source, complete private test logs, production deployments, customer outcomes, or a claim of engineering credentials.
+This repository contains real prototype captures, synthetic downloadable inputs, operating-design descriptions, a public showcase run walkthrough, a recorded failure case, and an illustrative acceptance standard. It does not contain the Nexus source, complete private test logs, production deployments, customer outcomes, or a claim of engineering credentials.
 
 The Northstar work sample is constructed and AI-assisted. Its dollar figures are hypothetical, not savings, revenue, investment results, or market estimates.
 
-[Overview](../README.md) · [Work sample and provenance](BUSINESS_WORKFLOW_CASE.md) · [Acceptance-design example](SUCCESSFUL_RUN_CASE.md) · [Graph design](EXECUTION_GRAPH.md)
+[Overview](../README.md) · [Run walkthrough](RUN_WALKTHROUGH.md) · [Work sample and provenance](BUSINESS_WORKFLOW_CASE.md) · [Acceptance-design example](SUCCESSFUL_RUN_CASE.md) · [Graph design](EXECUTION_GRAPH.md)

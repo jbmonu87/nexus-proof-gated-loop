@@ -2,6 +2,8 @@
 
 **October 1, 2026 · Fictional company · Synthetic data · AI-assisted portfolio demonstration**
 
+The [run walkthrough](RUN_WALKTHROUGH.md) explains how review changed these deliverables.
+
 ## The decision
 
 Northstar Field Services is a fictional business considering a 20-site rollout. The constructed recommendation is to test five sites first, then review field costs and repeat demand before expanding.

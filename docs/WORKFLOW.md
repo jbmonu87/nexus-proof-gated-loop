@@ -2,6 +2,8 @@
 
 The Nexus workflow is designed around one principle: **the person accountable for the outcome must be able to inspect why the work should be trusted.**
 
+For a short real example, [follow the showcase review-and-revision run](RUN_WALKTHROUGH.md). For the division between agent judgment, code-based checks, and human decisions, see [the execution-graph page](EXECUTION_GRAPH.md).
+
 ## The loop
 
 | Stage | Question | Output |
