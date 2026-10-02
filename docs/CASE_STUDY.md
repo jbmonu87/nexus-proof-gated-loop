@@ -4,6 +4,8 @@ My work starts with a problem that matters but does not yet have a clear path fo
 
 That is the common thread across my strategy consulting and cross-functional transformation background. Systems and workflows are tools for getting there. The purpose is to make consequential new things real.
 
+In one consulting engagement, I led interviews and journey-mapping workshops to understand where sales-to-onboarding handoffs were breaking. I then project-managed workflow requirements, coordinating consultants and the client's platform expert through build, testing, and initial rollout. The engagement ended while training and wider deployment were still being worked through.
+
 ## Why Nexus belongs in that story
 
 Nexus is a private R&D project through which I develop practical AI fluency. I chose a demanding product surface: business documents where an apparently successful interaction can still leave the file wrong, lose content, or fail after reopen.
