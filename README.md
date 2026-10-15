@@ -4,13 +4,13 @@
 
 Nexus is a local-first desktop workspace for business strategy, with native presentation, document, and spreadsheet editors. I’m exploring a more coherent way to move from assumptions and analysis to a decision. The editors are real; the wider connected-work and in-app assistant experience remains incomplete.
 
-I’m **JB Monu, a strategy and operations executive** with a consulting and transformation background. Nexus is my hands-on R&D project: I own the product vision, workflow design, requirements, agent operating model, acceptance standards, and final judgment. **AI coding agents implement most of the software.**
-
-The business problem is familiar: assumptions live in a workbook, reasoning in a memo, and the recommendation in a deck. Building Nexus lets me test that workflow and learn what it takes to direct AI implementation responsibly.
-
 ![Nexus displaying a synthetic business decision with an imported operating surplus chart](assets/nexus-northstar-decision.jpg)
 
 *Real Nexus window, October 1, 2026: a synthetic business decision in the presentation editor. The input was authored with AI assistance outside Nexus and imported. The capture’s source commit was not established. [Inspect the work sample and downloads](docs/BUSINESS_WORKFLOW_CASE.md).*
+
+I’m **JB Monu, a strategy and operations executive** with a consulting and transformation background. Nexus is my hands-on R&D project: I own the product vision, workflow design, requirements, agent operating model, acceptance standards, and final judgment. **AI coding agents implement most of the software.**
+
+The business problem is familiar: assumptions live in a workbook, reasoning in a memo, and the recommendation in a deck. Building Nexus lets me test that workflow and learn what it takes to direct AI implementation responsibly.
 
 ## See the product
 
