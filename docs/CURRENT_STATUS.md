@@ -1,45 +1,45 @@
 # Current Status and Claim Boundaries
 
-**Updated October 2, 2026 · Private, unshipped R&D · No production customers**
+**Evidence reviewed October 15, 2026 · Private, unshipped R&D · No production customers**
 
-## Evidence reviewed for this update
+## How to read the evidence
 
-| Evidence | What it establishes | What it does not establish |
+**Shown functioning** means the stated interaction or view was observed in the application. **Independently machine-verified** means a different AI agent from the builder ran checks against a pinned build; it does not mean an external audit. **Founder-tested** requires a recorded human test of that particular outcome. A screenshot alone establishes neither persistence nor acceptance.
+
+This update inspected the private integration source, dated verification records, retained captures, and integration history. Both October 15 changes below are present in the integration branch. Their runtime evidence comes from the separately rebuilt verification candidates before integration, not a new full-app run of the latest integration build. No private source or raw engineering records are published here.
+
+## What the evidence supports
+
+| Capability or observation | Evidence | Acceptance and limits |
 | --- | --- | --- |
-| October 1 Nexus window captures | These synthetic PPTX, DOCX, and XLSX inputs imported into native containers; particular slides, chart, memo, and values displayed | Every import format, pixel fidelity, or broad editor functionality |
-| Workbook edit, save, tab close/reopen | Shortened title and displayed values retained in an earlier capture iteration | Cold restart durability or complete formatting persistence |
-| October 1 showcase review and public revisions | A bounded Codex-assisted review-and-revision cycle with changed public artifacts | Execution of Claude Primary's full development graph, a complete public agent trace, or general autonomy |
-| August 30 public demonstration | Earlier synthetic presentation and recorded interaction failure | Current release readiness |
+| Presentation, document, and spreadsheet inputs displayed in native editors | **Shown functioning:** October 1 Northstar window captures | Particular synthetic files and views. The existing dist build’s source commit was not established. Broad editing and fidelity are not proved. |
+| Spreadsheet title edit and displayed values retained after native save and tab reopen | **Shown functioning:** earlier October 1 capture iteration | No full application restart was tested in that observation. Applied currency/percentage formats did not survive. |
+| Ordinary document-text insert/delete/cut/paste recording; Undo/Redo and targeted Accept/Reject; native save/full reopen; supported inline DOCX revision export | **Independently machine-verified October 15:** 10/10 primary feature cases, companion checks, and six additional keyboard probes; real application capture retained | Integrated October 15; post-integration typecheck and 176 focused Python checks passed. Founder typing/markup acceptance and actual exported-file viewing in Word remain pending. |
+| Sampled spreadsheet values, formulas, formatting, sheet structure, and pending cell entry retained across workbook switches and targeted save/full reopen | **Independently machine-verified October 15:** 21/21 active feature cases, separate disk checks, and full-reopen probes; retained app captures | Integrated October 15; typecheck passed. A post-integration runtime recheck and founder acceptance are still owed. This is scoped preservation evidence, not universal spreadsheet correctness. |
+| Northstar review changed an incorrect financial label and the public artifacts | **Recorded review and revision:** October 1–2 public showcase history | A bounded knowledge-work cycle, separate from the complete product-development workflow and in-app autonomy. |
 
-The screenshots used an existing local dist build whose source commit was not established. The workflow design pages describe operating practice; they do not establish the build provenance of these captures.
+No new founder-tested acceptance is claimed for the two October 15 changes. [View their captures and provenance](PRODUCT_EVIDENCE.md).
 
-## A gap found during the showcase
+## What remains partial or failing
 
-Currency and percentage display formats applied inside Nexus did not survive workbook tab close/reopen in this session. The title edit and displayed values did survive. Zoom changes also marked the model unsaved. These observations are recorded rather than presented as formatting-persistence success.
+- **Document review:** the new evidence concerns ordinary body text and supported inline revision export. Tracking formatting, paragraph marks, moves, or header/footer edits remains outside that delivered slice. A tracked paragraph join persists natively but strict DOCX export refuses the unsupported structural change by name.
+- **Spreadsheet preservation:** the October 1 Northstar currency/percentage-format loss and zoom-triggered dirty state have not been specifically rechecked. New passing tests on other fixtures do not close those observations.
+- **Broader regression checks:** the document verification sweep retained 299 passes, 16 failures, and 7 skips; spreadsheet verification retained 33 passes, 6 failures, and 1 skip. The records attribute baseline failures and other-item issues rather than presenting either sweep as all green. Spreadsheet review also retains a test-discrimination gap and an intermittent document close/save failure whose cause remains unresolved.
+- **Import/render fidelity and responsiveness:** complex files, pagination, precise keyboard behavior, caret feel, and performance still have open work. A passing focused check is not a guarantee across documents or a blanket speed comparison with other editors.
+- **General Office export and unsupported-content preservation:** incomplete. Preserving unsupported data remains a product requirement, not an achieved universal guarantee.
 
-A replacement deck imported under an existing filename initially showed older slide text on selection, despite corrected native content on disk. The final captures use a fresh import filename. The cause was not established in this session.
+The October 1 replacement-deck observation also remains open: importing corrected content under an existing filename initially displayed older slide text on selection. Fresh import filenames were used for the published captures; the cause was not established in that session.
 
-## Incomplete or uneven
+## Planned or not demonstrated
 
-- Office-format export and support for many edit classes;
-- editing breadth and product polish;
-- import/render fidelity across complex files;
-- demonstrated preservation of every unsupported feature;
-- end-to-end reliability across the intended business workflows;
-- the durable in-app product graph and assistant capabilities.
+The wider in-app business-work graph, automatic cross-artifact Live Links, and end-to-end autonomous analysis or document generation are not demonstrated by this portfolio. The Northstar model, memo, and deck were authored outside Nexus, then imported; the downloadable files are those inputs, not Nexus exports.
 
-Preserving unsupported data is a product requirement, not a claim that complete preservation has been achieved.
+The development workflow used to coordinate coding agents is distinct from the still-incomplete connected-work experience within the product. Visible assistant controls do not prove those capabilities work.
 
-## Authorship and autonomy
+## Authorship and public scope
 
-I own the product direction and operating design. AI coding agents perform most implementation work. Routine orchestration is delegated after approval; product and material scope decisions remain human-owned. Cross-harness work can still require a mechanical relay.
+I own product direction, workflow design, requirements, acceptance standards, and final judgment. AI coding agents perform most implementation work. Routine coordination is delegated within approved outcomes; product decisions and human acceptance remain my responsibility, and some cross-environment handoffs still require a relay.
 
-The development execution graph is distinct from the incomplete business-work graph within Nexus. Screenshots of assistant controls are not evidence of end-to-end autonomous in-app analysis or generation.
+The public repository contains selected real captures, synthetic inputs, high-level operating descriptions, and bounded examples. It does not establish commercial traction, customer outcomes, enterprise adoption, complete Office compatibility, or personal authorship of the production code. Northstar’s figures are hypothetical.
 
-## Public material
-
-This repository contains real prototype captures, synthetic downloadable inputs, operating-design descriptions, a public showcase run walkthrough, a recorded failure case, and an illustrative acceptance standard. It does not contain the Nexus source, complete private test logs, production deployments, customer outcomes, or a claim of engineering credentials.
-
-The Northstar work sample is constructed and AI-assisted. Its dollar figures are hypothetical, not savings, revenue, investment results, or market estimates.
-
-[Overview](../README.md) · [Run walkthrough](RUN_WALKTHROUGH.md) · [Work sample and provenance](BUSINESS_WORKFLOW_CASE.md) · [Acceptance-design example](SUCCESSFUL_RUN_CASE.md) · [Graph design](EXECUTION_GRAPH.md)
+[Overview](../README.md) · [Product evidence](PRODUCT_EVIDENCE.md) · [Run walkthrough](RUN_WALKTHROUGH.md) · [Work sample](BUSINESS_WORKFLOW_CASE.md)
