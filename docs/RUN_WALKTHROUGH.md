@@ -4,7 +4,7 @@
 
 This walkthrough follows the public portfolio update that produced the Northstar model, memo, presentation, and Nexus captures. A separate reviewer found a financial-label error; the work was revised and reviewed again.
 
-It is a bounded Codex-assisted knowledge-work example. It is not a run of Claude Primary's complete Nexus product-development state machine, and it does not prove autonomous in-app generation.
+It is a bounded Codex-assisted knowledge-work example. It does not demonstrate the complete Nexus development process or autonomous in-app generation. For newer editor behavior, see the separate [October 15 product evidence](PRODUCT_EVIDENCE.md).
 
 ## The brief
 
@@ -39,6 +39,13 @@ Both modeled scenarios hold revenue constant at $1,000,000 per month:
 These are simplified synthetic scenarios before tax and financing. Deducting fixed costs makes “contribution margin” an inappropriate label for the resulting ratios. The arithmetic stayed the same; the interpretation and labels changed.
 
 The separate reviewer identified that issue. I supplied the objective and constraints; I do not claim to have personally discovered the accounting error or performed every correction.
+
+| Before review | After correction |
+| --- | --- |
+| “Contribution”: $120,000 / $40,000; “contribution margin”: 12% / 4% | “Modeled operating surplus”: $120,000 / $40,000; “surplus margin”: 12% / 4% |
+| The labels implied a measure before fixed costs | The definition explicitly deducts the listed direct and fixed costs, before tax and financing |
+
+The historical link below preserves the original wording. The current downloads and real Nexus captures show the corrected version.
 
 ## Selected public outputs
 

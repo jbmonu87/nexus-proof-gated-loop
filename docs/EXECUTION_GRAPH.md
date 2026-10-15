@@ -1,10 +1,10 @@
-# Execution-Graph Design and Agentic Orchestration
+# The Execution Graph: Who Decides and Who Checks
 
 **Operating design · Development workflow, separate from the Nexus product graph**
 
 ## What I designed
 
-I use an execution graph to organize AI work around owned stages, bounded authority, evidence, and recovery paths. I define the operating model and acceptance standards; AI coding agents perform most implementation work.
+An execution graph is a map of how a work item moves from intent to an accepted result. It connects responsibility and evidence, so a completion claim can be traced back to what was requested and checked. I design that operating model; AI coding agents perform most implementation work.
 
 After I approve an outcome, the primary orchestrator handles routine routing and sequencing. A bounded build orchestrator handles implementation and retries within the outcome. It cannot redefine the goal, weaken the acceptance standard, or approve its own result.
 
@@ -24,17 +24,19 @@ The agent chooses a proposed next action. The guarded workflow can refuse it whe
 
 The [public run walkthrough](RUN_WALKTHROUGH.md) shows one bounded Codex-assisted review-and-revision cycle. It is separate from the broader Nexus development workflow.
 
-## What the graph makes explicit
+## A simplified map
 
-| Stage | Responsibility | Required distinction |
-| --- | --- | --- |
-| Outcome and scope | Human product owner | Product intent versus routine process |
-| Acceptance contract | Research and hardening roles | The required outcome versus an implementation hypothesis |
-| Gate | Independent gate writer | The checker versus the builder |
-| Build | Bounded build orchestrator and builder | Implementation versus approval |
-| Verification | Different agent from the builder | A completion claim versus accepted evidence |
-| Integration and closeout | Primary orchestrator | A verified change versus an integrated, completed item |
-| Recovery | Appropriate role for the failure | Setup failure, contract contradiction, and product failure |
+```mermaid
+flowchart LR
+    H[Human defines outcome] --> A[Agree acceptance evidence]
+    A --> B[Agent builds]
+    B --> V[Different agent verifies]
+    V -->|Evidence supports claim| I[Integrate and judge actual use]
+    V -->|Failure or uncertainty| A
+    I --> L[Record result and lesson]
+```
+
+The [workflow page](WORKFLOW.md) explains how these stages operate. This diagram is an explanation, not a public executable agent system or a trace of an unattended run.
 
 A failed or contradictory result routes to a responsible role. It does not silently redefine success.
 
@@ -42,7 +44,7 @@ A failed or contradictory result routes to a responsible role. It does not silen
 
 An agent saying “done” is not the same event as independent verification accepting a change. Keeping those stages separate gives the orchestrator a precise next action and gives the human a basis for review.
 
-“Execution-graph design” and “agentic orchestration” describe my work on this operating system. This portfolio does not assert professional software-engineering credentials or personal authorship of all implementation code.
+The October 15 spreadsheet example makes the distinction practical: independent checks supported a bounded repair, while founder acceptance and a post-integration runtime recheck remained open. [Inspect the product evidence](PRODUCT_EVIDENCE.md). Workflow state is useful precisely because those are different events.
 
 ## Evidence boundary
 

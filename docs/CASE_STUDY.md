@@ -2,7 +2,7 @@
 
 My work starts with a problem that matters but does not yet have a clear path forward. I help frame the decision, evaluate the options, design an operating approach, align the people involved, and move the work into implementation or a useful handoff.
 
-That is the common thread across my strategy consulting and cross-functional transformation background. Systems and workflows are tools for getting there. The purpose is to make consequential new things real.
+That is the common thread across my strategy consulting and cross-functional transformation background. Nexus extends that practice into hands-on AI R&D: I design the product and operating approach, while AI coding agents implement most of the software.
 
 In one consulting engagement, I led interviews and journey-mapping workshops to understand where sales-to-onboarding handoffs were breaking. I then project-managed workflow requirements, coordinating consultants and the client's platform expert through build, testing, and initial rollout. The engagement ended while training and wider deployment were still being worked through.
 
@@ -18,7 +18,7 @@ That creates useful questions for a strategy-to-execution leader:
 - What should happen when the evidence contradicts the plan?
 - What remains incomplete, and what is ready for a useful next step?
 
-The project gives me direct experience of where agentic work helps and where it breaks. It does not establish enterprise deployment experience or a shipped product.
+The project gives me direct experience of where AI delegation helps and where it breaks. It remains private, unshipped R&D.
 
 ## The contribution I own
 
@@ -30,13 +30,15 @@ The project gives me direct experience of where agentic work helps and where it 
 | Judgment | Decide product behavior and material scope; perform human smoke testing when needed | Produce evidence and challenge results |
 | Learning | Hold the project to its standard and retain useful lessons | Help identify failures and propose improvements |
 
-[The workflow](WORKFLOW.md) explains these responsibilities. [The graph page](EXECUTION_GRAPH.md) distinguishes agent decisions, code-based checks, and human judgment.
+[The workflow](WORKFLOW.md) explains how work moves. [The graph page](EXECUTION_GRAPH.md) shows who decides and who checks it.
 
 ## A decision that makes my standard concrete
 
 I require unsupported file properties to survive save. Existing business files belong to the user; an editor's support limit is not authority to silently remove their content.
 
 That requirement changes what counts as success. A superficially successful save is inadequate if it discards the user's work. Complete preservation remains an unmet proof obligation, not a guarantee presented in this portfolio.
+
+The [October 15 product evidence](PRODUCT_EVIDENCE.md) gives that standard a concrete example: a spreadsheet tab switch had discarded unsaved edits. Independent verification of the repair checked the edit after switching, on disk, and after a full reopen. The record still distinguishes those passing checks from pending founder acceptance and other unresolved failures. I do not claim to have personally diagnosed or coded that repair.
 
 ## From AI output to a useful decision
 
@@ -60,4 +62,4 @@ The public material includes particular real prototype views, synthetic editable
 
 It does not prove production adoption, a repeatable commercial offering, measured business impact from Nexus, general Office compatibility, or engineering credentials. The [current status](CURRENT_STATUS.md) records the product's limits.
 
-[Overview](../README.md) · [Run walkthrough](RUN_WALKTHROUGH.md) · [Business work sample](BUSINESS_WORKFLOW_CASE.md)
+[Overview](../README.md) · [Product evidence](PRODUCT_EVIDENCE.md) · [Run walkthrough](RUN_WALKTHROUGH.md) · [Business work sample](BUSINESS_WORKFLOW_CASE.md)

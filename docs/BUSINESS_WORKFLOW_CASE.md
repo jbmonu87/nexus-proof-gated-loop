@@ -10,6 +10,8 @@ Northstar Field Services is a fictional business considering a 20-site rollout. 
 
 The purpose is to show a connected knowledge-work deliverable: explicit assumptions, an inspectable calculation, a decision memo, and a presentation that explains the tradeoff.
 
+The three files are coordinated by their content. No automatic synchronization or cross-artifact Live Links were demonstrated in this session.
+
 ## The calculation
 
 Both full-scale scenarios hold volume and price constant. All financial figures below are USD per month.

@@ -2,11 +2,11 @@
 
 **A private desktop workspace for business strategy · Unshipped R&D · Evidence reviewed October 15, 2026**
 
-Nexus brings presentations, documents, and spreadsheets into one local-first workspace. I’m exploring how business teams could move from assumptions and analysis to a decision, with AI agents helping operate the software. Today, the most concrete product work is making those native editors useful and dependable; the wider connected-work and assistant experience remains incomplete.
+Nexus is a local-first desktop workspace for business strategy, with native presentation, document, and spreadsheet editors. I’m exploring a more coherent way to move from assumptions and analysis to a decision. The editors are real; the wider connected-work and in-app assistant experience remains incomplete.
 
 I’m **JB Monu, a strategy and operations executive** with a consulting and transformation background. Nexus is my hands-on R&D project: I own the product vision, workflow design, requirements, agent operating model, acceptance standards, and final judgment. **AI coding agents implement most of the software.**
 
-The business problem is familiar: assumptions live in a workbook, reasoning in a memo, and the recommendation in a deck. I want to test a more coherent way to work across them, while learning what it takes to direct AI implementation responsibly.
+The business problem is familiar: assumptions live in a workbook, reasoning in a memo, and the recommendation in a deck. Building Nexus lets me test that workflow and learn what it takes to direct AI implementation responsibly.
 
 ![Nexus displaying a synthetic business decision with an imported operating surplus chart](assets/nexus-northstar-decision.jpg)
 
